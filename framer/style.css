@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	cursor: url('images/cursor.png') 39 39, auto;
+	/*
+	cursor: -webkit-image-set(
+		url('images/cursor.png') 1x,
+		url('images/cursor@2x.png') 2x
+	) 39 39, auto;
+	*/
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html, body, #FramerRoot {
+	width: 320px;
+	height: 568px;
+	overflow: hidden;
+}
+
+body {
+	background: black;
+	font: 28px/1em "Helvetica";
+	color: #FFF;
+}
+
+a {
+	color: #FFF;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.framerAlert {
+	font: 12px/1.6em Menlo;
+	margin: 10px;
+}
+
+.zigzag {
+	position: relative;
+	width: 100%;
+	overflow: visible !important;
+	background: #FFF !important;
+	text-align: center;
+	font-size: 15px;
+	color: #333;
+	padding-top: 12px;
+}
+
+.zigzag:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -12px;
+	width: 100%;
+	height: 12px;
+	z-index: 1000000;
+
+	background:
+	  linear-gradient(-45deg, #FFF 6px, transparent 0),
+	  linear-gradient(45deg, #FFF 6px, transparent 0);
+
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	background-size: 12px 12px;
+}
+
+.room {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.tag {
+	display: inline-block;
+	font-size: 14px;
+	background: #5B8DF3;
+	border-radius: 3px;
+	margin: 0 9px 2px 0;
+	padding: 0px 11px;
+	color: white;
+}
+
+.main-tag {
+	display: inline-block;
+	font-size: 14px;
+	color: white;
+	background: #5B8DF3;
+	border-radius: 3px;
+	margin: 0 9px 2px 0;
+	padding: 0px 11px;
+}
