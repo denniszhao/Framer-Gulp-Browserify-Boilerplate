@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var browserify = require('browserify');
 var watchify = require('watchify');
+var uglify = require('gulp-uglify');
 var gutil = require('gulp-util');
 var source = require('vinyl-source-stream');
 
